@@ -72,10 +72,8 @@ static void	calcule_best_move(t_list *stack_a, t_list *stack_b, t_track11 *var)
 void	best_move(t_list **stack_a, t_list **stack_b)
 {
 	t_track11	var;
-	int			len;
 
 	inisialize_track11(&var);
-	len = ft_lstsize(*stack_a);
 	devide1(stack_a, stack_b);
 	sort_5_args(stack_a, stack_b);
 	while ((*stack_b))
